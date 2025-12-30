@@ -1,0 +1,539 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "sheet_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "sheet 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Sheet1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.subcategory": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "subcategory"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "subcategory": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "quantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Visible",
+			        "State": "Authored"
+			      },
+			      "Terms": [
+			        {
+			          "quantity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "magnitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "sheet_1_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.date": {
+			          "Target": {
+			            "Entity": "sheet_1.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_dates"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.category": {
+			          "Target": {
+			            "Entity": "sheet_1.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_categories"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_subcategory": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.subcategory": {
+			          "Target": {
+			            "Entity": "sheet_1.subcategory"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.subcategory"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_subcategories"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.value": {
+			          "Target": {
+			            "Entity": "sheet_1.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_values"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.quantity": {
+			          "Target": {
+			            "Entity": "sheet_1.quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.quantity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_quantities"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

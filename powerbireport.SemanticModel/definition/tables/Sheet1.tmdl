@@ -1,0 +1,25 @@
+table Sheet1
+	lineageTag: 8dc85ead-1f04-4598-94b0-57c087948068
+
+	column numbers
+		dataType: int64
+		formatString: 0
+		lineageTag: b52b4d15-f627-49c5-a60b-d5a336b265a0
+		summarizeBy: sum
+		sourceColumn: numbers
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\GarrajuNaralasetti(Q\OneDrive - Quadrant Resource LLC\powerbireportdata.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"numbers", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

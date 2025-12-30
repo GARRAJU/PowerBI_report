@@ -1,0 +1,56 @@
+table Sheet1
+	lineageTag: b67b71e6-22ef-42cf-8446-037f1d3f4ad4
+
+	column date
+		dataType: string
+		lineageTag: 41d12991-54b1-4055-ae79-4de2977194db
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: a2ab04cb-d399-4d96-9242-b50c19b1b0ca
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column subcategory
+		dataType: string
+		lineageTag: eeec8777-b365-4695-b8b9-66854361394a
+		summarizeBy: none
+		sourceColumn: subcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: string
+		lineageTag: 72790afa-ae77-44af-a6d7-3867813db7ca
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: string
+		lineageTag: b45a5244-be85-4ada-91a0-2214cc092736
+		summarizeBy: none
+		sourceColumn: quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\GarrajuNaralasetti(Q\OneDrive - Quadrant Resource LLC\powerbireportdata.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"date", type any}, {"category", type any}, {"subcategory", type any}, {"value", type any}, {"quantity", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

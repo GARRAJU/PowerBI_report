@@ -1,0 +1,20 @@
+relationship AutoDetected_d394112c-0333-42f3-aff1-b9a372b3a216
+	fromColumn: 'Fact table'.'Outlet id'
+	toColumn: 'Outlet size'.'Outlet id'
+
+relationship AutoDetected_74849724-ae63-419c-941f-d190b52dd202
+	fromColumn: 'Fact table'.'Outlet type id'
+	toColumn: 'Outlet type'.'Outlet type id'
+
+relationship AutoDetected_4a9a6974-7c87-46bb-a0a4-c10ce5f891c3
+	fromColumn: 'Fact table'.'Location type id'
+	toColumn: 'Location type'.'Location type id'
+
+relationship AutoDetected_372b4772-3cec-4edb-b4bb-7dfb1683b972
+	fromColumn: 'Fact table'.'Item type id'
+	toColumn: 'Item type'.'Item type id'
+
+relationship AutoDetected_882e13ea-7ea3-4215-a53c-9bc960dfa036
+	fromColumn: 'Fact table'.'Fat content id'
+	toColumn: 'Fat content'.'Fat content id'
+

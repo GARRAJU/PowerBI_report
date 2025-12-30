@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Blinkit"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ed111b0c-2e4f-a571-4684-ef8f217d5387"
+  }
+}

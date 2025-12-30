@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e2624ee52d789aa0f9c7",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"676a6406c1f112c1f8a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":140.9743564884386,\"y\":198.55543167385719,\"z\":0,\"width\":536.0996655194144,\"height\":422.9230694653158,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Sheet1.numbers)\"},{\"queryRef\":\"Sum(Sheet1.numbers)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"numbers\"}},\"Function\":0},\"Name\":\"Sum(Sheet1.numbers)\",\"NativeReferenceName\":\"Sum of numbers\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 422.92,
+          "width": 536.10,
+          "x": 140.97,
+          "y": 198.56,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

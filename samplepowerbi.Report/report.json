@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"203L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0846089b6de743a0d04a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3d18119119b5f64e64f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":223.42180879559731,\"y\":103.73155408367018,\"z\":0,\"width\":799.9298689913796,\"height\":325.1585253007354,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Size\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(BlinkIT Grocery Data.Item Fat Content)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Size\"},\"Name\":\"BlinkIT Grocery Data.Outlet Size\",\"NativeReferenceName\":\"Outlet Size\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Fat Content\"}},\"Function\":5},\"Name\":\"CountNonNull(BlinkIT Grocery Data.Item Fat Content)\",\"NativeReferenceName\":\"Count of Item Fat Content\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Fat Content\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 325.16,
+          "width": 799.93,
+          "x": 223.42,
+          "y": 103.73,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

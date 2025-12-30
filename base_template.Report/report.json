@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "95ac048e3d2dd1965248",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"35730dfb5855ff1a2056\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.76886906781715,\"y\":35.73997770129429,\"z\":0,\"width\":264.07872412623004,\"height\":150.90212807213146,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"kpi\",\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 150.90,
+          "width": 264.08,
+          "x": 31.77,
+          "y": 35.74,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4bd1008945cda6154f3d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":718.770662659363,\"y\":21.84109748412429,\"z\":2,\"width\":226.3531921081972,\"height\":164.80100828930145,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"kpi\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 164.80,
+          "width": 226.35,
+          "x": 718.77,
+          "y": 21.84,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"d165b85f65b90824c81f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":95.30660720345145,\"y\":277.97760434340006,\"z\":3,\"width\":412.99529788162295,\"height\":250.17984390906005,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"barChart\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 250.18,
+          "width": 413.00,
+          "x": 95.31,
+          "y": 277.98,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"e319eb947b4051ac39f9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":375.26976586359007,\"y\":21.84109748412429,\"z\":1,\"width\":264.07872412623004,\"height\":164.80100828930145,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"kpi\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 164.80,
+          "width": 264.08,
+          "x": 375.27,
+          "y": 21.84,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

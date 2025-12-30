@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "af20d9b2d6106fdee80f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4ad84709e74f0b90dfd1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":605,\"y\":48,\"width\":514,\"height\":290,\"z\":7,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Item Type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Item Type\"},\"Name\":\"BlinkIT Grocery Data.Item Type\",\"NativeReferenceName\":\"Item Type\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 290.00,
+          "width": 514.00,
+          "x": 605.00,
+          "y": 48.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"8c83b0a2a9e5ba0c39f1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":81.40772698628145,\"y\":47.653303601725725,\"z\":5,\"width\":514.2585680352901,\"height\":289.89093024383146,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Rows\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Type\",\"NativeReferenceName\":\"Outlet Type\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 289.89,
+          "width": 514.26,
+          "x": 81.41,
+          "y": 47.65,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"f0588db5c4d05edef1ba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":81,\"y\":348,\"width\":514,\"height\":290,\"z\":6,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"BlinkIT Grocery Data.Outlet Location Type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BlinkIT Grocery Data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Outlet Location Type\"},\"Name\":\"BlinkIT Grocery Data.Outlet Location Type\",\"NativeReferenceName\":\"Outlet Location Type\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 290.00,
+          "width": 514.00,
+          "x": 81.00,
+          "y": 348.00,
+          "z": 6.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

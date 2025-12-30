@@ -1,0 +1,34 @@
+table 'Measures (2)'
+	lineageTag: 5bed9144-c665-4bc9-8449-a8edc1e94274
+
+	measure 'Total sales' = sum('Fact table'[Sales])
+		lineageTag: 020b56e2-ed11-4cbf-85ad-2e32c9778401
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average sales' = AVERAGE('Fact table'[Sales])
+		lineageTag: ed600126-60be-4cdf-adb1-030385de6f78
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'No of Items' = COUNTROWS('Fact table')
+		formatString: 0
+		lineageTag: 4f4c269e-77e5-449c-8cc6-0933a4dd1a34
+
+	measure 'Average rating' = AVERAGE('Fact table'[Rating])
+		lineageTag: 2236c9f7-3afa-42b6-ac8b-4c7a1cf7da88
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Measures (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,120 @@
+table 'BlinkIT Grocery Data'
+	lineageTag: ab7ea5b0-73cc-46c3-b298-4c9c544a9029
+
+	column 'Item Fat Content'
+		dataType: string
+		lineageTag: e03ee8fb-f272-4a11-b798-87459766e26f
+		summarizeBy: none
+		sourceColumn: Item Fat Content
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item Identifier'
+		dataType: string
+		lineageTag: 3510fd3c-441c-4a1e-b6aa-5a91133f3875
+		summarizeBy: none
+		sourceColumn: Item Identifier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item Type'
+		dataType: string
+		lineageTag: 19a62fd8-6f09-4793-8690-602e2df8c436
+		summarizeBy: none
+		sourceColumn: Item Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outlet Establishment Year'
+		dataType: int64
+		formatString: 0
+		lineageTag: 14fc1e18-5f8b-47e3-ad98-516b28a3a998
+		summarizeBy: sum
+		sourceColumn: Outlet Establishment Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outlet Identifier'
+		dataType: string
+		lineageTag: 4e8dd2f2-752a-4bc9-a826-85b500b1f26a
+		summarizeBy: none
+		sourceColumn: Outlet Identifier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outlet Location Type'
+		dataType: string
+		lineageTag: ab944d1f-b682-4496-9612-e940fdc69d22
+		summarizeBy: none
+		sourceColumn: Outlet Location Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outlet Size'
+		dataType: string
+		lineageTag: a2d15743-682b-4c9e-83e2-eb0d08c6e006
+		summarizeBy: none
+		sourceColumn: Outlet Size
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outlet Type'
+		dataType: string
+		lineageTag: f41d1f72-13ba-4445-a8fb-c6ac9e85bb0e
+		summarizeBy: none
+		sourceColumn: Outlet Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item Visibility'
+		dataType: double
+		lineageTag: dd21a893-5362-471f-9b57-cef5934afe68
+		summarizeBy: sum
+		sourceColumn: Item Visibility
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Item Weight'
+		dataType: double
+		lineageTag: db17c8ea-f759-483a-a9ff-d5b8cc9b9642
+		summarizeBy: sum
+		sourceColumn: Item Weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sales
+		dataType: double
+		lineageTag: 9d6d2952-0a1e-4c09-8080-6e0f8bfdf00c
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Rating
+		dataType: int64
+		formatString: 0
+		lineageTag: c4eabc21-1727-47fb-aa7b-997901543f83
+		summarizeBy: sum
+		sourceColumn: Rating
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'BlinkIT Grocery Data' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\GarrajuNaralasetti(Q\Downloads\BlinkIT Grocery Data.xlsx"), null, true),
+				    #"BlinkIT Grocery Data_Sheet" = Source{[Item="BlinkIT Grocery Data",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"BlinkIT Grocery Data_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Item Fat Content", type text}, {"Item Identifier", type text}, {"Item Type", type text}, {"Outlet Establishment Year", Int64.Type}, {"Outlet Identifier", type text}, {"Outlet Location Type", type text}, {"Outlet Size", type text}, {"Outlet Type", type text}, {"Item Visibility", type number}, {"Item Weight", type number}, {"Sales", type number}, {"Rating", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

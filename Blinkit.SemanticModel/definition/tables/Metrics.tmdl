@@ -1,0 +1,50 @@
+table Metrics
+	lineageTag: bb81268b-a017-40de-b838-40a7b54cb58e
+
+	column Metrics
+		lineageTag: 2dc2703f-38d1-4fc6-9425-99ce2c53c1f6
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Metrics Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Metrics Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metrics Fields'
+		isHidden
+		lineageTag: 61b18422-77e5-4504-8adc-5a555b992bfb
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Metrics Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metrics Order'
+		isHidden
+		formatString: 0
+		lineageTag: d3949b93-a3a0-47d0-adea-f3de9d0defc4
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Metrics = calculated
+		mode: import
+		source =
+				{
+				    ("Total sales", NAMEOF('Measures (2)'[Total sales]), 0),
+				    ("No of Items", NAMEOF('Measures (2)'[No of Items]), 1),
+				    ("Average sales", NAMEOF('Measures (2)'[Average sales]), 2),
+				    ("Average rating", NAMEOF('Measures (2)'[Average rating]), 3)
+				}
+
+	annotation PBI_Id = c2674d4ee6c549d7a175aa97d7a52e7d
+

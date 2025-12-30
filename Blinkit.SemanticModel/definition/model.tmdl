@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Outlet size","Outlet type","Location type","Item type","Fact table","Fat content","Measures (2)"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table 'Outlet size'
+ref table 'Outlet type'
+ref table 'Location type'
+ref table 'Item type'
+ref table 'Fact table'
+ref table 'Fat content'
+ref table 'Measures (2)'
+ref table Metrics
+
+ref cultureInfo en-US
+
